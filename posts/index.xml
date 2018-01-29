@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Devops for cloud native softwares</title>
+    <title>Posts on Devops for cloud native software</title>
     <link>https://fjammes.github.info/posts/</link>
-    <description>Recent content in Posts on Devops for cloud native softwares</description>
+    <description>Recent content in Posts on Devops for cloud native software</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 26 Jan 2018 14:54:24 +0100</lastBuildDate>
     
@@ -18,7 +18,7 @@
       <guid>https://fjammes.github.info/posts/kubeinstall/</guid>
       <description>Pre-requisites In order to set up a kubernetes cluster, follow steps below on all your machines.
 Install kubernetes packages Create files /etc/yum.repos.d/docker.repo and /etc/yum.repos.d/kubernetes.repo, owned by root with read permission:
-# Create in /etc/yum.repos.d/docker.repo [dockerrepo] name=Docker Repository baseurl=https://yum.dockerproject.org/repo/main/centos/7/ enabled=1 gpgcheck=1 gpgkey=https://yum.dockerproject.org/gpg  # Create /etc/yum.repos.d/kubernetes.repo [kubernetes] name=Kubernetes baseurl=http://yum.kubernetes.io/repos/kubernetes-el7-x86_64 enabled=1 gpgcheck=1 repo_gpgcheck=1 gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg  Use yum to install: docker-engine: 1.12.3-1.el7.centos kubeadm: 1.9.1-0 kubectl: 1.9.1-0 kubelet: 1.9.1-0 kubernetes-cni: 0.6.0-0  Set up systemd configuration In /etc/systemd/system/kubelet.</description>
+# Create in /etc/yum.repos.d/docker.repo [dockerrepo] name=Docker Repository baseurl=https://yum.dockerproject.org/repo/main/centos/7/ enabled=1 gpgcheck=1 gpgkey=https://yum.dockerproject.org/gpg  # Create /etc/yum.repos.d/kubernetes.repo [kubernetes] name=Kubernetes baseurl=http://yum.kubernetes.io/repos/kubernetes-el7-x86_64 enabled=1 gpgcheck=1 repo_gpgcheck=1 gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg  Install dependencies docker-engine: 1.12.3-1.el7.centos kubeadm: 1.9.1-0 kubectl: 1.9.1-0 kubelet: 1.9.1-0 kubernetes-cni: 0.6.0-0  Disable swap $ sudo swapoff -a  Set up systemd configuration In /etc/systemd/system/kubelet.</description>
     </item>
     
   </channel>
