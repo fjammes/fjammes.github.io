@@ -6,12 +6,12 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <meta name='description' content='Pre-requisites In order to set up a kubernetes cluster, follow steps below on all your machines.
 Install kubernetes packages Create files /etc/yum.repos.d/docker.repo and /etc/yum.repos.d/kubernetes.repo, owned by root with read permission:
-# Create in /etc/yum.repos.d/docker.repo [dockerrepo] name=Docker Repository baseurl=https://yum.dockerproject.org/repo/main/centos/7/ enabled=1 gpgcheck=1 gpgkey=https://yum.dockerproject.org/gpg  # Create /etc/yum.repos.d/kubernetes.repo [kubernetes] name=Kubernetes baseurl=http://yum.kubernetes.io/repos/kubernetes-el7-x86_64 enabled=1 gpgcheck=1 repo_gpgcheck=1 gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg  Install dependencies sudo yum install docker-engine-1.12.3-1.el7.centos kubeadm-1.9.1-0 kubectl-1.9.1-0 kubelet-1.9.1-0 kubernetes-cni-0.6.0-0  Disable swap $ sudo swapoff -a  Set up systemd configuration In /etc/systemd/system/kubelet.'>
+# Create in /etc/yum.repos.d/docker.repo [dockerrepo] name=Docker Repository baseurl=https://yum.dockerproject.org/repo/main/centos/7/ enabled=1 gpgcheck=1 gpgkey=https://yum.dockerproject.org/gpg  # Create /etc/yum.repos.d/kubernetes.repo [kubernetes] name=Kubernetes baseurl=http://yum.kubernetes.io/repos/kubernetes-el7-x86_64 enabled=1 gpgcheck=1 repo_gpgcheck=1 gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg  Install dependencies sudo yum install docker-engine-1.12.3-1.el7.centos \ kubeadm-1.9.1-0 kubectl-1.9.1-0 \ kubelet-1.9.1-0 kubernetes-cni-0.6.0-0  Disable swap $ sudo swapoff -a  Set up systemd configuration In /etc/systemd/system/kubelet.'>
 
 <meta property='og:title' content='Set up a Kubernetes 1.9.1 cluster on Centos7 • Devops for cloud native software'>
 <meta property='og:description' content='Pre-requisites In order to set up a kubernetes cluster, follow steps below on all your machines.
 Install kubernetes packages Create files /etc/yum.repos.d/docker.repo and /etc/yum.repos.d/kubernetes.repo, owned by root with read permission:
-# Create in /etc/yum.repos.d/docker.repo [dockerrepo] name=Docker Repository baseurl=https://yum.dockerproject.org/repo/main/centos/7/ enabled=1 gpgcheck=1 gpgkey=https://yum.dockerproject.org/gpg  # Create /etc/yum.repos.d/kubernetes.repo [kubernetes] name=Kubernetes baseurl=http://yum.kubernetes.io/repos/kubernetes-el7-x86_64 enabled=1 gpgcheck=1 repo_gpgcheck=1 gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg  Install dependencies sudo yum install docker-engine-1.12.3-1.el7.centos kubeadm-1.9.1-0 kubectl-1.9.1-0 kubelet-1.9.1-0 kubernetes-cni-0.6.0-0  Disable swap $ sudo swapoff -a  Set up systemd configuration In /etc/systemd/system/kubelet.'>
+# Create in /etc/yum.repos.d/docker.repo [dockerrepo] name=Docker Repository baseurl=https://yum.dockerproject.org/repo/main/centos/7/ enabled=1 gpgcheck=1 gpgkey=https://yum.dockerproject.org/gpg  # Create /etc/yum.repos.d/kubernetes.repo [kubernetes] name=Kubernetes baseurl=http://yum.kubernetes.io/repos/kubernetes-el7-x86_64 enabled=1 gpgcheck=1 repo_gpgcheck=1 gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg  Install dependencies sudo yum install docker-engine-1.12.3-1.el7.centos \ kubeadm-1.9.1-0 kubectl-1.9.1-0 \ kubelet-1.9.1-0 kubernetes-cni-0.6.0-0  Disable swap $ sudo swapoff -a  Set up systemd configuration In /etc/systemd/system/kubelet.'>
 <meta property='og:url' content='https://fjammes.github.info/posts/kubeinstall/'>
 <meta property='og:site_name' content='Devops for cloud native software'>
 <meta property='og:type' content='article'><meta property='article:section' content='Posts'><meta property='article:published_time' content='2018-01-26T14:54:24&#43;01:00'/><meta property='article:modified_time' content='2018-01-26T14:54:24&#43;01:00'/><meta name='twitter:card' content='summary'>
@@ -129,7 +129,9 @@ gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg
 
 <h2 id="install-dependencies">Install dependencies</h2>
 
-<pre><code>sudo yum install docker-engine-1.12.3-1.el7.centos kubeadm-1.9.1-0 kubectl-1.9.1-0 kubelet-1.9.1-0 kubernetes-cni-0.6.0-0
+<pre><code>sudo yum install docker-engine-1.12.3-1.el7.centos \
+    kubeadm-1.9.1-0 kubectl-1.9.1-0 \
+    kubelet-1.9.1-0 kubernetes-cni-0.6.0-0
 </code></pre>
 
 <h2 id="disable-swap">Disable swap</h2>
