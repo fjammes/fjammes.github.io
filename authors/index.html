@@ -4,22 +4,20 @@
 <head>
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name='description' content='Pre-requisites In order to set up a kubernetes cluster, follow steps below on all your machines.
-Install kubernetes packages Create files /etc/yum.repos.d/docker.repo and /etc/yum.repos.d/kubernetes.repo, owned by root with read permission:
-# Create in /etc/yum.repos.d/docker.repo [dockerrepo] name=Docker Repository baseurl=https://yum.dockerproject.org/repo/main/centos/7/ enabled=1 gpgcheck=1 gpgkey=https://yum.dockerproject.org/gpg  # Create /etc/yum.repos.d/kubernetes.repo [kubernetes] name=Kubernetes baseurl=http://yum.kubernetes.io/repos/kubernetes-el7-x86_64 enabled=1 gpgcheck=1 repo_gpgcheck=1 gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg  Use yum to install: docker-engine: 1.12.3-1.el7.centos kubeadm: 1.9.1-0 kubectl: 1.9.1-0 kubelet: 1.9.1-0 kubernetes-cni: 0.6.0-0  Set up systemd configuration In /etc/systemd/system/kubelet.'>
+<meta name='description' content='Minimalist theme for Hugo'>
 
-<meta property='og:title' content='Set up a Kubernetes 1.9.1 cluster on Centos7 • Recipes and hack for modern infrastructure'>
-<meta property='og:description' content='Pre-requisites In order to set up a kubernetes cluster, follow steps below on all your machines.
-Install kubernetes packages Create files /etc/yum.repos.d/docker.repo and /etc/yum.repos.d/kubernetes.repo, owned by root with read permission:
-# Create in /etc/yum.repos.d/docker.repo [dockerrepo] name=Docker Repository baseurl=https://yum.dockerproject.org/repo/main/centos/7/ enabled=1 gpgcheck=1 gpgkey=https://yum.dockerproject.org/gpg  # Create /etc/yum.repos.d/kubernetes.repo [kubernetes] name=Kubernetes baseurl=http://yum.kubernetes.io/repos/kubernetes-el7-x86_64 enabled=1 gpgcheck=1 repo_gpgcheck=1 gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg  Use yum to install: docker-engine: 1.12.3-1.el7.centos kubeadm: 1.9.1-0 kubectl: 1.9.1-0 kubelet: 1.9.1-0 kubernetes-cni: 0.6.0-0  Set up systemd configuration In /etc/systemd/system/kubelet.'>
-<meta property='og:url' content='https://fjammes.github.info/posts/kubeinstall/'>
+<meta property='og:title' content='Authors • Recipes and hack for modern infrastructure'>
+<meta property='og:description' content='Minimalist theme for Hugo'>
+<meta property='og:url' content='https://fjammes.github.info/authors/'>
 <meta property='og:site_name' content='Recipes and hack for modern infrastructure'>
-<meta property='og:type' content='article'><meta property='article:section' content='Posts'><meta property='article:published_time' content='2018-01-26T14:54:24&#43;01:00'/><meta property='article:modified_time' content='2018-01-26T14:54:24&#43;01:00'/><meta name='twitter:card' content='summary'>
+<meta property='og:type' content='website'><meta property='og:updated_time' content='2018-01-26T14:54:24&#43;01:00'/><meta name='twitter:card' content='summary'>
 
 <meta name="generator" content="Hugo 0.35-DEV" />
 
-  <title>Set up a Kubernetes 1.9.1 cluster on Centos7 • Recipes and hack for modern infrastructure</title>
-  <link rel='canonical' href='https://fjammes.github.info/posts/kubeinstall/'>
+  <title>Authors • Recipes and hack for modern infrastructure</title>
+  <link rel='canonical' href='https://fjammes.github.info/authors/'>
+  
+    <link href="https://fjammes.github.info/authors/index.xml" rel="alternate" type="application/rss+xml" title="Recipes and hack for modern infrastructure" />
   
   
   <link rel='icon' href='/favicon.ico'>
@@ -27,7 +25,7 @@ Install kubernetes packages Create files /etc/yum.repos.d/docker.repo and /etc/y
 </head>
 
 
-<body class='page type-posts'>
+<body class='taxonomyTerm type-authors taxonomyTerm-author'>
   <div class='site'>
 
     <a class='screen-reader' href='#main'>Skip to Content</a>
@@ -54,158 +52,21 @@ Install kubernetes packages Create files /etc/yum.repos.d/docker.repo and /etc/y
 
 
 <main id='main' class='main'>
-  <article lang='en' class='entry'>
-    <header class='header-container'>
-  <div class='header entry-header'>
-    <div class='header-info'>
-      <h1 class='title'>Set up a Kubernetes 1.9.1 cluster on Centos7</h1>
-      
+  <header class='header-container'>
+    <div class='header'>
+      <div class='header-info'>
+        <h1 class='title'>Authors</h1>
+        
 
+      </div>
     </div>
+  </header>
+
+  <div class='list-container'>
+    <ul class='list'>
     
-<div class='meta'>
-  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-  <line x1="16" y1="2" x2="16" y2="6"/>
-  <line x1="8" y1="2" x2="8" y2="6"/>
-  <line x1="3" y1="10" x2="21" y2="10"/>
-  
-</svg>
-<span class='screen-reader'>Posted on </span>
-  <time class='date' datetime='2018-01-26T14:54:24&#43;01:00'>2018, Jan 26</time>
-</span>
-
-  
-  
-<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <circle cx="12" cy="12" r="10"/>
-  <polyline points="12 6 12 12 15 15"/>
-  
-</svg>
-2 mins read
-</span>
-
-
-</div>
-
-
+    </ul>
   </div>
-</header>
-
-    
-    
-
-    <div class='entry-content'>
-  
-
-<h1 id="pre-requisites">Pre-requisites</h1>
-
-<p>In order to set up a kubernetes cluster, follow steps below on all your
-machines.</p>
-
-<h2 id="install-kubernetes-packages">Install kubernetes packages</h2>
-
-<p>Create files <em>/etc/yum.repos.d/docker.repo</em> and <em>/etc/yum.repos.d/kubernetes.repo</em>,
-owned by root with read permission:</p>
-
-<pre><code># Create in /etc/yum.repos.d/docker.repo
-[dockerrepo]
-name=Docker Repository
-baseurl=https://yum.dockerproject.org/repo/main/centos/7/
-enabled=1
-gpgcheck=1
-gpgkey=https://yum.dockerproject.org/gpg
-</code></pre>
-
-<pre><code># Create /etc/yum.repos.d/kubernetes.repo
-[kubernetes]
-name=Kubernetes
-baseurl=http://yum.kubernetes.io/repos/kubernetes-el7-x86_64
-enabled=1
-gpgcheck=1
-repo_gpgcheck=1
-gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg
-       https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
-</code></pre>
-
-<h2 id="use-yum-to-install">Use yum to install:</h2>
-
-<pre><code>docker-engine: 1.12.3-1.el7.centos  
-kubeadm: 1.9.1-0  
-kubectl: 1.9.1-0 
-kubelet: 1.9.1-0 
-kubernetes-cni: 0.6.0-0
-</code></pre>
-
-<h2 id="set-up-systemd-configuration">Set up systemd configuration</h2>
-
-<p>In <em>/etc/systemd/system/kubelet.service.d/10-kubeadm.conf</em>, comment line below:</p>
-
-<pre><code>#Environment=&quot;KUBELET_CGROUP_ARGS=
-</code></pre>
-
-<p>Create file <em>/etc/sysctl.d/90-kubernetes.conf</em>, owned by root with read
-permission:</p>
-
-<pre><code># Enable netfilter on bridges
-# Required for weave (k8s v1.9.1) to start
-net.bridge.bridge-nf-call-iptables = 1
-</code></pre>
-
-<p>Restart systemd</p>
-
-<pre><code>$ /bin/systemctl daemon-reload
-$ /bin/systemctl enable docker 
-$ /bin/systemctl enable kubelet
-$ /bin/systemctl restart systemd-sysctl
-</code></pre>
-
-<h1 id="create-kubernetes-cluster">Create kubernetes cluster</h1>
-
-<p>On kubernetes master, as non-root user, run:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ TOKEN<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>sudo -- kubeadm token generate<span style="color:#66d9ef">)</span>
-<span style="color:#75715e"># Add line below to access kubernetes API via ssh tunneling
-</span><span style="color:#75715e"></span>$ SSH_TUNNEL_OPT<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;--apiserver-cert-extra-sans=localhost&#34;</span>
-$ sudo -- kubeadm init $SSH_TUNNEL_OPT --token <span style="color:#e6db74">&#34;</span>$TOKEN<span style="color:#e6db74">&#34;</span>
-$ mkdir -p $HOME/.kube
-$ sudo cp /etc/kubernetes/admin.conf $HOME/.kube/config
-$ sudo chown -R qserv:qserv $HOME/.kube
-$ KUBEVER<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>kubectl version | base64 | tr -d <span style="color:#e6db74">&#39;\n&#39;</span><span style="color:#66d9ef">)</span>
-<span style="color:#75715e"># Install Weave network plugin
-</span><span style="color:#75715e"></span>$ kubectl apply -f <span style="color:#ae81ff">\&#34;</span>https://cloud.weave.works/k8s/net?k8s-version<span style="color:#f92672">=</span>$KUBEVER<span style="color:#ae81ff">\&#34;</span>
-$ HASH<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>openssl x509 -pubkey -in /etc/kubernetes/pki/ca.crt | openssl rsa -pubin -outform der <span style="color:#ae81ff">2</span>&gt;/dev/null | openssl dgst -sha256 -hex | sed <span style="color:#e6db74">&#39;s/^.* //&#39;</span><span style="color:#66d9ef">)</span></code></pre></div>
-<p>On each other kubernetes machines,  as non-root user, run:</p>
-
-<pre><code># Get $TOKEN and $HASH from master and export them on machine
-# Assuming kubernetes master dns name is kubernetes-master.domain.net
-
-$ kubeadm join --token &quot;$TOKEN&quot; --discovery-token-ca-cert-hash &quot;sha256:$HASH&quot;
-kubernetes-master.domain.net :6443
-</code></pre>
-
-<h2 id="check-cluster-state">Check cluster state</h2>
-
-<p>On kubernetes master, as non-root user, run:</p>
-
-<pre><code>$ kubectl get nodes
-$ kubectl get pods
-</code></pre>
-
-</div>
-
-    
-<footer class='entry-footer-container'>
-  <div class='entry-footer'>
-  
-  </div>
-</footer>
-
-
-  </article>
-  
-  
 </main>
 
     <footer id='footer' class='footer-container'>
