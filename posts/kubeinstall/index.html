@@ -146,6 +146,26 @@ gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg
 <pre><code>#Environment=&quot;KUBELET_CGROUP_ARGS=
 </code></pre>
 
+<p>This will give</p>
+
+<pre><code>$ cat /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
+[Service]
+Environment=&quot;KUBELET_KUBECONFIG_ARGS=--bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf
+--kubeconfig=/etc/kubernetes/kubelet.conf&quot;
+Environment=&quot;KUBELET_SYSTEM_PODS_ARGS=--pod-manifest-path=/etc/kubernetes/manifests
+--allow-privileged=true&quot;
+Environment=&quot;KUBELET_NETWORK_ARGS=--network-plugin=cni
+--cni-conf-dir=/etc/cni/net.d --cni-bin-dir=/opt/cni/bin&quot;
+Environment=&quot;KUBELET_DNS_ARGS=--cluster-dns=10.96.0.10
+--cluster-domain=cluster.local&quot;
+Environment=&quot;KUBELET_AUTHZ_ARGS=--authorization-mode=Webhook
+--client-ca-file=/etc/kubernetes/pki/ca.crt&quot;
+Environment=&quot;KUBELET_CADVISOR_ARGS=--cadvisor-port=0&quot;
+# Environment=&quot;KUBELET_CGROUP_ARGS=--cgroup-driver=systemd&quot;
+Environment=&quot;KUBELET_CERTIFICATE_ARGS=--rotate-certificates=true
+--cert-dir=/var/lib/kubelet/pki&quot;
+</code></pre>
+
 <p>Create file <em>/etc/sysctl.d/90-kubernetes.conf</em>, owned by root with read
 permission:</p>
 
