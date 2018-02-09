@@ -11,6 +11,16 @@
     
     
     <item>
+      <title>Pre-requisites to install Qserv at CC-IN2P3</title>
+      <link>https://fjammes.github.info/posts/qservchecklist/</link>
+      <pubDate>Fri, 26 Jan 2018 14:54:24 +0100</pubDate>
+      
+      <guid>https://fjammes.github.info/posts/qservchecklist/</guid>
+      <description> Pre-requisites In order to set up a kubernetes cluster for Qserv, follow steps below on all your machines.
+ Create a qserv account with uid 1000 on all nodes Create a 20 GB /var on all nodes Install docker Install kubernetes  </description>
+    </item>
+    
+    <item>
       <title>Set up a Kubernetes 1.9.1 cluster on Centos7</title>
       <link>https://fjammes.github.info/posts/kubeinstall/</link>
       <pubDate>Fri, 26 Jan 2018 14:54:24 +0100</pubDate>
